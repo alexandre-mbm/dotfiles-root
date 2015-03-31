@@ -30,3 +30,15 @@ pacman -R wine_gecko
 pacman -Ss samba
 pacman -S samba
 exit
+echo $DISPLAY
+export DISPLAY=:0
+echo $DISPLAY
+gedit
+git status
+chown root:users .ssh/*
+ls -la .ssh/*
+git push
+eval $(ssh-agent -s)
+ssh-add
+ssh -T git@github.com
+exit
